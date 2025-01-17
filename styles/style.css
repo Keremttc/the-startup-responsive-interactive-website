@@ -2,7 +2,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     list-style: none;
-    
+    margin: 0;
+    padding: 0;
   }
 
 
@@ -11,7 +12,84 @@ body{
     font-family: var(--font-default);
 }
 
-header{
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+
+}
+
+button {
+    all: unset; 
+    cursor: pointer;
+}
+
+.logo-link {
+    flex-grow: 4;
+    padding: 1em 0 2em 1.5em;
+}
+
+.save-button{
+    padding: 2.7em 0 0 0;
+    
+}
+
+.visit--profile-button {
+    padding: 2.7em 1em 0 0;
+}
+
+h1 {
+    flex-wrap: wrap;
+    font-family: var(--font-default);
+    font-size: var(--font-size-l);
+    padding-left: 1em;
+}
+
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+    padding: 1em 1em 0 1em;
+}
+
+.profile-name {
+    font-family: var(--font-default);
+    font-size: var(--font-size-m);
+    padding: 1em;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    background-color: var(--button-color-gray);
+    border-radius: 7.44px;
+    &:hover {
+        background-color: var(--accent-color-blue);
+    }
+}
+
+[type="button"]{
+    background-image: url("../assets/pencil.svg"); 
+    background-size: 1.5em 1.5em;  
+    background-repeat: no-repeat; 
+    background-position: .25em center; /* Plaats de afbeelding iets naar links en gecentreerd verticaal */
+    padding:.75em .75em .75em 2.5em; /*2.5em als padding is door de de breedte van de afbeelding van 2em op te tellen met de position van de background (.25em) vanaf 2.5 begint de tekst. */
+}
+
+.section-cadeaus {
+    padding-top: 1em; /* Verwijdert de standaard padding van de <ul> */
+    list-style-type: none; /* Verwijdert de standaard opsommingstekens */
+    display: flex; /* Maakt de <ul> een flex-container */
+    overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
+    scroll-snap-type: x mandatory; /* Zet automatisch centreren bij scrollen aan op de x-as: als je scrolt komt de meest dichtsbijzijnde foto op de focus */
+	overscroll-behavior-x: contain;  /* Beperkt het horizontale scrollgedrag: vermijdt het swipen naar een andere pagina  */
+    width: 100%; /* Zet de breedte van de <ul> op 100% */
+}
+
+h2{
+    font-family: var(--font-default);
+    font-weight: 300;
+    padding: 2em 0 0 .8em;
+
+    
 }
 
 
@@ -21,36 +99,234 @@ header{
     gap: 3em;
     margin: 0;
     padding: 1em;
+
+    @media (min-width: 768px) { 
+        display: flex;
+        overflow-x: auto;
+        gap: 10em;
+        margin: 0;
+        padding: 1em;
+
+
+    @media (min-width:  1024px) {
+        display: flex;
+        overflow-x: auto;
+        gap: 10em;
+        margin: 0;
+        padding: 1em;
+
+
+    }
+
+    @media (min-width:  1280px) {
+
+
+
+        
+    }
+
+    }
+
+    
 }
 
 .card{
+    height: 80%;
+    width: 70%;
     display: grid;
     position: relative;
     box-shadow: 0 0 .5em #555;
-    
+    border-radius: 2%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    overflow: clip;
 
-    @media (min-width: 769px) {
-        height: 50%;
-        width: 15%;
+    @media (min-width: 768px) {
+     
     }
 
     
+    
 }
+
+.cards2{
+    display: flex;
+    overflow-x: auto;
+    gap: 3em;
+    margin: 0;
+    padding: 1em;
+
+    @media (min-width: 768px) {
+     display: none;
+    }
+    
+    @media (min-width:  1024px) {
+
+    }
+
+    @media (min-width:  1280px) {
+
+        
+    }
+}
+
+
+
+.card2{
+    height: 80%;
+    width: 70%;
+    display: grid;
+    position: relative;
+    box-shadow: 0 0 .5em #555;
+    border-radius: 2%;
+    /* border: 1px solid rgb(0, 0, 0); */
+    overflow: clip;
+
+    @media (min-width: 768px) {
+     display: none;
+    }   
+
+
+    @media (min-width:  1024px) {
+
+
+
+
+    }
+
+    @media (min-width:  1280px) {
+
+
+
+        
+    }
+}
+
+.lego-gifts{
+
+
+    @media (min-width: 768px) {
+        display: none;
+       }  
+}
+
 
 .like-button{
+    display: grid;
+    place-items: center;
     position: absolute;
-    top: 1em;
-    right: 1em;
-    border-radius: 45%;
-    width: auto;
-    height: 2em;
+    top: .5em;
+    right: .5em; 
+    border: none;
+    background: white;
+    width: 2.5em;
+    aspect-ratio: 1;
+    border-radius: 50%;
 
     @media (min-width: 769px) {
-        position: absolute;
-        top: 1em;
-        right: 1em;
-        border-radius: 45%;
-        height: 15%;
-        width: 15%;
+    /* top: 1em;
+    right: 1em; */
     }
 }
+
+h3 {
+    font-family: var(--font-default);
+}
+
+p {
+    font-family: var(--font-default);
+    text-align: center;
+}
+
+.chat-logo {
+    position: fixed; 
+    bottom: 1em;     
+    right: 1em;     
+    display: flex;   
+    gap: 1em;       
+    padding: 0.5em;  
+    background-color: white; 
+    z-index: 1000;   
+    border-radius: 0.5em; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+/* MARK: FOOTER */
+
+footer {
+    padding: 1em 0 0 1em;
+    /* display: flex;
+    display: grid;
+   */
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 1em;
+    right: 7em;
+    width: 300px;
+    height: 400px;
+    background-color: #EAEAEA;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1001;
+    scale: 1;
+    transition-duration: .3s;
+
+    @media (min-width: 769px) {
+        width: 200px;
+        height: 300px;
+    }
+
+}
+
+.chat-box.hidden {
+    /* display: none; */
+    scale: 0;
+}
+
+.chat-header {
+    background-color: #000000;
+    color: white;
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-content {
+    padding: 1em;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+
+
+
+
+li {
+    list-style: none;
+}
+
+a {
+    font-family: var(--font-default);
+    font-size: var(--font-size-s);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:var(--black);
+    line-height: 1.5em;
+}
+
