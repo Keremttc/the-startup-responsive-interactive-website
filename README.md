@@ -17,6 +17,15 @@ De instructies voor deze opdracht staan in: [INSTRUCTIONS.md](https://github.com
 
 ## Licentie
 
+## Refactoring en Code Conventions
+
+## Ademruimte en inspringen
+
+## Volgorde en nesten van CSS selectors
+
+## Naamgeving
+
+
 This project is licensed under the terms of the [MIT license](./LICENSE).
 
 
