@@ -1,4 +1,11 @@
-function toggleChat() {
-    const chatBox = document.querySelector('.chat-box');
-    chatBox.classList.toggle('hidden');
+
+const openChatButton = document.querySelector ('.chat-button')
+const theSearch = document.querySelector ('.zoeken')
+
+openChatButton.addEventListener('click', openSearch)
+
+
+function openSearch() {
+    theSearch.classList.add('toonSearch')
 }
+
