@@ -67,11 +67,46 @@ Maat L (768 px): Voor grotere apparaten, zoals tablets of kleine laptops.
 
 ## ontwerpkeuzes 
 
-Voor mijn ontwerpkeuze heb ik een uitgebreide breakdownschets gemaakt van de log-in pagina. Deze schets laat niet alleen de visuele indeling van de pagina zien, maar ook de functionaliteit en een idee te geven van bepaalde elementen. Ik heb ervoor gekozen om bij elk profiel een delete-knop te plaatsen. Dit biedt gebruikers de mogelijkheid om een profiel te verwijderen als dat nodig is. De pagina is opgebouwd uit drie hoofdonderdelen: een **header**, een **main** en een **footer**. In de header worden bijvoorbeeld het logo en een eventuele navigatie weergegeven. De main-sectie is het centrale deel van de pagina en bevat de lijst met profielen. Hier heb ik ook laten zien wat er gebeurt als je op de delete-knop klikt. Hiervan heb ik opok een breakdownschets gemaakt.
+Bij het ontwerp van de cadeau-inspiratiepagina is bewust gekozen voor een eenvoudige en toegankelijke manier om gebruikers te betrekken. Linksonder op de pagina vind je een knop waarmee je feedback kunt geven. Maar dat is niet alles – zodra je op de knop klikt, verschijnt er een chatfunctie.
 
-Daarnaast heb ik ook een Javascript-functie geschetst die de functionaliteit van de delete-knop ondersteunt. In mijn schets wordt duidelijk hoe deze functie werkt, bijvoorbeeld door het profiel uit de lijst te verwijderen. Door deze functie alvast uit te werken, krijg ik een goed beeld van de technische kant en weet ik zeker dat het ontwerp niet alleen mooi is, maar ook praktisch en functioneel.  
+Dit is een bewuste ontwerpkeuze: de knop geeft je niet alleen de mogelijkheid om te reageren, maar ook om meteen een stap verder te gaan. Door de chat te openen, kun je aangeven wat je zoekt of voor wie je een cadeau wilt vinden. Op basis van wat je daar deelt, wordt de pagina afgestemd om cadeau-inspiratie te tonen die echt bij jou past.
 
-![Breakdown-schets](https://github.com/user-attachments/assets/3a6243d3-7f53-40b0-abe6-8af03e50dbeb)
+Zo wordt het proces niet alleen persoonlijker, maar ook leuker en makkelijker. Een kleine klik kan dus een groot verschil maken
+
+![breakdownschets1](https://github.com/user-attachments/assets/76d33c91-ad50-491e-838f-c3c5e1e9343b)
+
+![breakdownschets2](https://github.com/user-attachments/assets/88060cc8-c7fb-4c27-8e66-abb9364b3094)
+
+## kenmerken
+
+Ik gebruik voor css nesting. .card2 {
+     
+    
+      @media (min-width: 768px) {
+        display: none;
+      }
+    
+      @media (min-width: 1024px) {
+      }
+    
+      @media (min-width: 1280px) {
+      }
+    }      
+
+
+   Voor javascript gebruik ik functions.
+
+   
+const openChatButton = document.querySelector ('.chat-button')
+const theSearch = document.querySelector ('.zoeken')
+
+openChatButton.addEventListener('click', openSearch)
+
+
+function openSearch() {
+    theSearch.classList.add('toonSearch')
+}
+
 
 
 ## Licentie
