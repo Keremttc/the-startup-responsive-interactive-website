@@ -7,7 +7,7 @@ header {
 }
 
 button {
-    all: unset; /*Verwijdert de standaard styling van de button*/
+    all: unset;
     cursor: pointer;
 }
 
@@ -28,18 +28,19 @@ main {
 }
 
 .section-cadeaus {
-    padding-top: 1em; /* Verwijdert de standaard padding van de <ul> */
-    list-style-type: none; /* Verwijdert de standaard opsommingstekens */
-    display: flex; /* Maakt de <ul> een flex-container */
-    overflow-x: auto; /* Maakt horizontaal scrollen mogelijk */
-    scroll-snap-type: x mandatory; /* Zet automatisch centreren bij scrollen aan op de x-as: als je scrolt komt de meest dichtsbijzijnde foto op de focus */
-	overscroll-behavior-x: contain;  /* Beperkt het horizontale scrollgedrag: vermijdt het swipen naar een andere pagina  */
-    width: 100%; /* Zet de breedte van de <ul> op 100% */
+    padding-top: 1em; 
+    list-style-type: none; 
+    display: flex; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+	overscroll-behavior-x: contain;  
+    width: 100%; 
     gap: 1em;
+   
 }
 
 .section-cadeaus::-webkit-scrollbar {
-    display: none; /*Verwijdert de scrollbar*/
+    display: none;
 }
 
 
@@ -72,7 +73,7 @@ p {
 
 /* MARK: VIEW TRANSITION*/
 
-@view-transition{ /*hiermee wordt de @viewtransitie geactiveerd: https://developer.chrome.com/docs/web-platform/view-transitions*/
+@view-transition{
     navigation: auto;
 }
 

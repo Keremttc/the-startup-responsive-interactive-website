@@ -125,7 +125,7 @@ h2 {
   padding: 2em 0 0 0.8em;
 
   @media (min-width: 768px) {
-    display: none;
+   
   }
   }
 
@@ -249,7 +249,7 @@ h2 {
       aspect-ratio: 1;
       border-radius: 50%;
     
-      @media (min-width: 769px) {
+      @media (min-width: 768px) {
         /* top: 1em;
         right: 1em; */
       }
@@ -287,6 +287,7 @@ p {
   bottom: -.5em;
   right: .4em;
   cursor: pointer;
+  
   @media (min-width: 40em) {
       display: none;
   }
@@ -295,6 +296,7 @@ p {
 
 .zoeken.toonSearch {
   translate: 0% 0%;   
+  transition: .5s cubic-bezier(0,.43,.4,.52); 
 }
 
 
@@ -361,7 +363,7 @@ p {
       font-family: var(--font-default);
       background-image: url("../assets/lens.png"); 
       background-size: 1.5em 1.5em;  
-      background-repeat: no-repeat; /* Voorkom herhaling van de afbeelding */
+      background-repeat: no-repeat;
       background-position: .50em center;
       padding:.75em .75em .75em 3em;   
   }  
@@ -436,7 +438,7 @@ a {
 
 /* MARK: VIEW TRANSITION*/
 
-@view-transition{ /*hiermee wordt de @viewtransitie geactiveerd: https://developer.chrome.com/docs/web-platform/view-transitions*/
+@view-transition{ 
   navigation: auto;
 }
 
