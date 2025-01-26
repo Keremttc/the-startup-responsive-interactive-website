@@ -74,6 +74,7 @@ p {
 /* MARK: VIEW TRANSITION*/
 
 @view-transition{
+    
     navigation: auto;
 }
 

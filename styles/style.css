@@ -31,7 +31,7 @@ button {
   cursor: pointer;
 }
 
-.logo-link  {
+.logo  {
   flex-grow: 4;
   padding: 1em 0 2em 1.5em;
 
@@ -41,7 +41,7 @@ button {
   padding: 2.7em 0 0 0;
 }
 
-.visit--profile-button {
+.visit-button {
   padding: 2.7em 1em 0 0;
 }
 
@@ -105,7 +105,7 @@ h1 {
   padding: 0.75em 0.75em 0.75em 2.5em; 
 }
 
-.section-cadeaus {
+.scadeaus {
   padding-top: 1em; 
   list-style-type: none; 
   display: flex; 
@@ -115,7 +115,7 @@ h1 {
   width: 100%;
 }
 
-.section-cadeaus::-webkit-scrollbar {
+.cadeaus::-webkit-scrollbar {
   display: none; 
 }
 
